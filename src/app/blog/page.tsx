@@ -80,7 +80,7 @@ export default function Blog() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Knowledge Base</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Insights</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Insights</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
             Security guidance, compliance updates, and best practices for K-12 administrators and security directors.
           </p>
@@ -93,16 +93,16 @@ export default function Blog() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="relative overflow-hidden group">
               <Image src={posts[0].img} alt={posts[0].title} width={700} height={450} className="object-cover w-full h-80 transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
               <div className="absolute top-4 left-4">
-                <span className="font-display text-electric-cyan text-xs tracking-widest uppercase bg-navy/80 px-3 py-1">{posts[0].category}</span>
+                <span className="font-display text-electric-cyan text-xs tracking-widest uppercase bg-gray-900/80 px-3 py-1">{posts[0].category}</span>
               </div>
             </div>
             <div className="flex flex-col justify-center">
               <div className="text-steel-silver text-xs mb-3">{posts[0].date} · {posts[0].readTime}</div>
-              <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-4">{posts[0].title}</h2>
+              <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-4">{posts[0].title}</h2>
               <p className="text-steel-silver leading-relaxed mb-6">{posts[0].excerpt}</p>
-              <Link href={`/blog/${posts[0].slug}`} className="inline-flex items-center gap-2 text-electric-cyan text-sm font-display uppercase tracking-widest hover:text-white transition-colors">
+              <Link href={`/blog/${posts[0].slug}`} className="inline-flex items-center gap-2 text-electric-cyan text-sm font-display uppercase tracking-widest hover:text-gray-900 transition-colors">
                 Read Article
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2"/></svg>
               </Link>
@@ -115,14 +115,14 @@ export default function Blog() {
                 <div className="relative overflow-hidden">
                   <Image src={post.img} alt={post.title} width={400} height={250} className="object-cover w-full h-48 transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute top-3 left-3">
-                    <span className="font-display text-electric-cyan text-xs tracking-widest uppercase bg-navy/80 px-2 py-1">{post.category}</span>
+                    <span className="font-display text-electric-cyan text-xs tracking-widest uppercase bg-gray-900/80 px-2 py-1">{post.category}</span>
                   </div>
                 </div>
                 <div className="p-6">
                   <div className="text-steel-silver text-xs mb-2">{post.date} · {post.readTime}</div>
-                  <h3 className="font-display text-white uppercase tracking-wider text-sm leading-snug mb-3">{post.title}</h3>
+                  <h3 className="font-display text-gray-900 uppercase tracking-wider text-sm leading-snug mb-3">{post.title}</h3>
                   <p className="text-steel-silver text-sm leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
-                  <Link href={`/blog/${post.slug}`} className="text-electric-cyan text-xs font-display uppercase tracking-widest hover:text-white transition-colors">
+                  <Link href={`/blog/${post.slug}`} className="text-electric-cyan text-xs font-display uppercase tracking-widest hover:text-gray-900 transition-colors">
                     Read →
                   </Link>
                 </div>

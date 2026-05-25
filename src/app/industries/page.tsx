@@ -30,7 +30,7 @@ export default function Industries() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Who We Serve</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Industries Served</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Industries Served</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
             Focused entirely on K-12 education institutions — the institutions that need security most and deserve it most.
           </p>
@@ -41,7 +41,7 @@ export default function Industries() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-6">
+              <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-6">
                 Why <span className="gradient-text">K-12 Schools?</span>
               </h2>
               <p className="text-steel-silver leading-relaxed mb-5">
@@ -63,14 +63,14 @@ export default function Industries() {
             />
           </div>
 
-          <h2 className="font-display text-3xl text-white uppercase tracking-wider text-center mb-12">Our Service States</h2>
+          <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider text-center mb-12">Our Service States</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {states.map((state) => (
               <div key={state.name} className="glass p-6 hover:border-electric-cyan/20 transition-all">
                 <h3 className="font-display text-electric-cyan text-xl uppercase tracking-wider mb-4">{state.name}</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <div className="font-display text-white text-2xl">{state.districts}</div>
+                    <div className="font-display text-gray-900 text-2xl">{state.districts}</div>
                     <div className="text-steel-silver text-xs mt-1">School Districts</div>
                   </div>
                   <div>

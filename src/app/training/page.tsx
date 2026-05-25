@@ -34,7 +34,7 @@ export default function Training() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Knowledge Transfer</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Training &amp; Support</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Training &amp; Support</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
             A system is only as effective as the people who use it. We ensure your team is confident, capable, and supported.
           </p>
@@ -43,13 +43,13 @@ export default function Training() {
 
       <section className="py-16 bg-navy">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-10">Training Programs</h2>
+          <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-10">Training Programs</h2>
           <div className="space-y-5 mb-20">
             {programs.map((prog, i) => (
               <div key={prog.title} className="glass p-7 hover:border-electric-cyan/20 transition-all">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
                   <div>
-                    <h3 className="font-display text-white text-lg uppercase tracking-wider">{prog.title}</h3>
+                    <h3 className="font-display text-gray-900 text-lg uppercase tracking-wider">{prog.title}</h3>
                   </div>
                   <div className="flex gap-4">
                     <div>
@@ -69,12 +69,12 @@ export default function Training() {
             ))}
           </div>
 
-          <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-10">Support Tiers</h2>
+          <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-10">Support Tiers</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {support.map((tier) => (
               <div key={tier.tier} className={`p-7 ${tier.tier === 'Gold' ? 'bg-electric-blue/10 border-2 border-electric-cyan/30' : 'glass'}`}>
                 <div className="font-display text-electric-cyan text-xs tracking-widest uppercase mb-2">{tier.tier} Support</div>
-                <div className="font-display text-white text-sm mb-5">{tier.price}</div>
+                <div className="font-display text-gray-900 text-sm mb-5">{tier.price}</div>
                 <ul className="space-y-2">
                   {tier.features.map(f => (
                     <li key={f} className="flex items-center gap-2 text-steel-silver text-sm">

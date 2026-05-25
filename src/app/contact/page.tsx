@@ -26,7 +26,7 @@ export default function Contact() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Get In Touch</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Contact Us</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Contact Us</h1>
           <p className="text-steel-silver text-lg max-w-xl">
             Ready to improve security at your institution? Let's start the conversation.
           </p>
@@ -53,7 +53,7 @@ export default function Contact() {
                         type="text"
                         value={form.name}
                         onChange={e => setForm({...form, name: e.target.value})}
-                        className="w-full bg-navy-700 border border-electric-blue/20 focus:border-electric-cyan/50 text-white px-4 py-3 outline-none transition-colors text-sm"
+                        className="w-full bg-white border border-gray-200 focus:border-electric-cyan/50 text-gray-900 px-4 py-3 outline-none transition-colors text-sm"
                         placeholder="John Smith"
                       />
                     </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                         type="email"
                         value={form.email}
                         onChange={e => setForm({...form, email: e.target.value})}
-                        className="w-full bg-navy-700 border border-electric-blue/20 focus:border-electric-cyan/50 text-white px-4 py-3 outline-none transition-colors text-sm"
+                        className="w-full bg-white border border-gray-200 focus:border-electric-cyan/50 text-gray-900 px-4 py-3 outline-none transition-colors text-sm"
                         placeholder="john@district.edu"
                       />
                     </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                       type="tel"
                       value={form.phone}
                       onChange={e => setForm({...form, phone: e.target.value})}
-                      className="w-full bg-navy-700 border border-electric-blue/20 focus:border-electric-cyan/50 text-white px-4 py-3 outline-none transition-colors text-sm"
+                      className="w-full bg-white border border-gray-200 focus:border-electric-cyan/50 text-gray-900 px-4 py-3 outline-none transition-colors text-sm"
                       placeholder="(555) 000-0000"
                     />
                   </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                     <select
                       value={form.state}
                       onChange={e => setForm({...form, state: e.target.value})}
-                      className="w-full bg-navy-700 border border-electric-blue/20 focus:border-electric-cyan/50 text-white px-4 py-3 outline-none transition-colors text-sm"
+                      className="w-full bg-white border border-gray-200 focus:border-electric-cyan/50 text-gray-900 px-4 py-3 outline-none transition-colors text-sm"
                     >
                       <option value="">Select State</option>
                       {['Florida','Michigan','Illinois','Missouri','Indiana','Ohio'].map(s => (
@@ -97,7 +97,7 @@ export default function Contact() {
                     <select
                       value={form.service}
                       onChange={e => setForm({...form, service: e.target.value})}
-                      className="w-full bg-navy-700 border border-electric-blue/20 focus:border-electric-cyan/50 text-white px-4 py-3 outline-none transition-colors text-sm"
+                      className="w-full bg-white border border-gray-200 focus:border-electric-cyan/50 text-gray-900 px-4 py-3 outline-none transition-colors text-sm"
                     >
                       <option value="">Select a Service</option>
                       <option>Access Control Design</option>
@@ -132,7 +132,7 @@ export default function Contact() {
                   className="glass p-12 text-center"
                 >
                   <div className="text-5xl mb-4">✅</div>
-                  <h3 className="font-display text-white text-2xl uppercase tracking-wider mb-3">Message Received</h3>
+                  <h3 className="font-display text-gray-900 text-2xl uppercase tracking-wider mb-3">Message Received</h3>
                   <p className="text-steel-silver">We'll respond within 24 business hours. Thank you for reaching out.</p>
                 </motion.div>
               )}
@@ -141,7 +141,7 @@ export default function Contact() {
             {/* Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="font-display text-white text-2xl uppercase tracking-wider mb-4">Get a Free Assessment</h2>
+                <h2 className="font-display text-gray-900 text-2xl uppercase tracking-wider mb-4">Get a Free Assessment</h2>
                 <p className="text-steel-silver leading-relaxed">
                   Our initial consultation is completely free. We'll assess your current security posture, discuss your goals, and provide actionable recommendations — with no obligation.
                 </p>
@@ -157,11 +157,11 @@ export default function Contact() {
                 </div>
                 <div className="glass p-5">
                   <div className="font-display text-electric-cyan text-xs tracking-widest uppercase mb-2">Response Time</div>
-                  <div className="text-white text-sm">Within 24 business hours</div>
+                  <div className="text-gray-700 text-sm">Within 24 business hours</div>
                 </div>
                 <div className="glass p-5">
                   <div className="font-display text-electric-cyan text-xs tracking-widest uppercase mb-2">Email</div>
-                  <a href="mailto:info@soulardtech.com" className="text-electric-cyan hover:text-white transition-colors text-sm">info@soulardtech.com</a>
+                  <a href="mailto:info@soulardtech.com" className="text-electric-cyan hover:text-gray-900 transition-colors text-sm">info@soulardtech.com</a>
                 </div>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-navy-900/90 backdrop-blur-xl border-b border-electric-blue/10 py-3'
+            ? 'bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm py-3'
             : 'bg-transparent py-5'
         }`}
       >
@@ -50,7 +50,7 @@ export default function Navbar() {
               </svg>
             </div>
             <div>
-              <span className="font-display text-white text-lg tracking-widest uppercase">SOULARD</span>
+              <span className="font-display text-gray-900 text-lg tracking-widest uppercase">SOULARD</span>
               <span className="font-display text-electric-cyan text-xs block tracking-[0.3em] uppercase -mt-1">Technology</span>
             </div>
           </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`relative px-4 py-2 font-body text-sm font-medium tracking-wide transition-colors group ${
-                  pathname === link.href ? 'text-electric-cyan' : 'text-steel-silver hover:text-white'
+                  pathname === link.href ? 'text-electric-cyan' : 'text-steel-silver hover:text-gray-900'
                 }`}
               >
                 {link.label}
@@ -79,7 +79,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/contact"
-              className="relative px-6 py-2.5 text-sm font-medium font-body text-white overflow-hidden group border border-electric-blue/50 rounded"
+              className="relative px-6 py-2.5 text-sm font-medium font-body text-electric-blue overflow-hidden group border border-electric-blue/50 rounded"
             >
               <span className="absolute inset-0 bg-electric-blue/0 group-hover:bg-electric-blue/20 transition-colors duration-300" />
               <span className="absolute inset-0 border border-electric-cyan/0 group-hover:border-electric-cyan/50 rounded transition-all duration-300" />
@@ -117,7 +117,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 bg-navy-900/98 backdrop-blur-2xl flex flex-col items-center justify-center"
+            className="fixed inset-0 z-40 bg-white backdrop-blur-2xl flex flex-col items-center justify-center"
           >
             <div className="flex flex-col items-center gap-8">
               {navLinks.map((link, i) => (
@@ -130,7 +130,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-display text-4xl text-white hover:text-electric-cyan transition-colors tracking-widest uppercase"
+                    className="font-display text-4xl text-gray-900 hover:text-electric-cyan transition-colors tracking-widest uppercase"
                   >
                     {link.label}
                   </Link>

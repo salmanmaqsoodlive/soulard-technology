@@ -5,12 +5,12 @@ module.exports = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#1a0000',
-          900: '#1a0000',
-          800: '#fff5f5',
-          700: '#180000',
-          600: '#2d0000',
-          500: '#3f0000',
+          DEFAULT: '#ffffff',
+          900: '#ffffff',
+          800: '#f9fafb',
+          700: '#ffffff',
+          600: '#f3f4f6',
+          500: '#e5e7eb',
         },
         electric: {
           blue: '#cc0000',

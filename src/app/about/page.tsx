@@ -22,7 +22,7 @@ export default function About() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">About Us</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-6">
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-6">
             Who We Are
           </h1>
         </div>
@@ -33,7 +33,7 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl text-white uppercase tracking-wider mb-6">
+              <h2 className="font-display text-3xl md:text-4xl text-gray-900 uppercase tracking-wider mb-6">
                 Our <span className="gradient-text">Mission</span>
               </h2>
               <p className="text-steel-silver leading-relaxed mb-5">
@@ -66,7 +66,7 @@ export default function About() {
       {/* Values */}
       <section className="py-20 bg-navy-800">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl text-white uppercase tracking-wider text-center mb-12">Core Values</h2>
+          <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider text-center mb-12">Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: '🛡', title: 'Security First', desc: 'Student and staff safety drives every recommendation we make.' },
@@ -76,7 +76,7 @@ export default function About() {
             ].map((v) => (
               <div key={v.title} className="glass p-6 text-center">
                 <div className="text-3xl mb-3">{v.icon}</div>
-                <h3 className="font-display text-white text-sm uppercase tracking-wider mb-2">{v.title}</h3>
+                <h3 className="font-display text-gray-900 text-sm uppercase tracking-wider mb-2">{v.title}</h3>
                 <p className="text-steel-silver text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
@@ -87,7 +87,7 @@ export default function About() {
       {/* Service Areas */}
       <section className="py-20 bg-navy">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-4">Service Areas</h2>
+          <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-4">Service Areas</h2>
           <p className="text-steel-silver mb-10">We proudly serve K-12 institutions across six states</p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Florida', 'Michigan', 'Illinois', 'Missouri', 'Indiana', 'Ohio'].map((state) => (

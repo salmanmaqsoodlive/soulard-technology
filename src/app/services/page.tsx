@@ -59,7 +59,7 @@ export default function Services() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">What We Offer</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Our Services</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Our Services</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
             Comprehensive security consulting and access control solutions designed specifically for K-12 educational institutions.
           </p>
@@ -75,7 +75,7 @@ export default function Services() {
                   <div className="lg:col-span-2">
                     <div className="flex items-center gap-4 mb-4">
                       <span className="font-display text-electric-cyan/30 text-4xl">{s.num}</span>
-                      <h2 className="font-display text-2xl text-white uppercase tracking-wider">{s.title}</h2>
+                      <h2 className="font-display text-2xl text-gray-900 uppercase tracking-wider">{s.title}</h2>
                     </div>
                     <p className="text-steel-silver leading-relaxed">{s.desc}</p>
                   </div>

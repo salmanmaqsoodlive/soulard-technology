@@ -24,7 +24,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <span className="font-display text-white text-lg tracking-widest uppercase block">SOULARD</span>
+                <span className="font-display text-gray-900 text-lg tracking-widest uppercase block">SOULARD</span>
                 <span className="font-display text-electric-cyan text-xs tracking-[0.3em] uppercase -mt-1 block">Technology</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-white text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Services</h4>
+            <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Services</h4>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s}>
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-display text-white text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Company</h4>
+            <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Company</h4>
             <ul className="space-y-3">
               {company.map((c) => (
                 <li key={c}>
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-white text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Contact</h4>
+            <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Contact</h4>
             <div className="space-y-4 text-sm text-steel-silver">
               <p>Serving K-12 institutions across 6 states</p>
               <Link href="/contact" className="block hover:text-electric-cyan transition-colors">info@soulardtech.com</Link>

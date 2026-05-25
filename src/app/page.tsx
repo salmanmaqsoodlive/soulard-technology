@@ -124,17 +124,17 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
             alt="Security system"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-[0.06]"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-700/90 to-navy-600/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-red-50/60" />
         </div>
 
         {/* Grid overlay */}
         <div
           className="absolute inset-0 z-[1] opacity-40"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0,102,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,102,255,0.06) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(220,38,38,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(220,38,38,0.06) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
           }}
         />
@@ -161,7 +161,7 @@ export default function Home() {
                 initial={{ y: 100 }}
                 animate={heroLoaded ? { y: 0 } : {}}
                 transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                className="font-display text-6xl sm:text-7xl md:text-8xl text-white uppercase leading-tight tracking-wider"
+                className="font-display text-6xl sm:text-7xl md:text-8xl text-gray-900 uppercase leading-tight tracking-wider"
               >
                 Securing
               </motion.h1>
@@ -203,7 +203,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center px-8 py-4 border border-steel-light/30 text-steel-silver hover:text-white hover:border-electric-blue/50 font-body font-medium text-sm uppercase tracking-widest transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 border border-gray-300 text-gray-600 hover:text-gray-900 hover:border-electric-blue/50 font-body font-medium text-sm uppercase tracking-widest transition-all"
               >
                 View Services
               </Link>
@@ -280,7 +280,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase block mb-4">What We Do</span>
-            <h2 className="font-display text-4xl md:text-5xl text-white uppercase tracking-wider mb-4">
+            <h2 className="font-display text-4xl md:text-5xl text-gray-900 uppercase tracking-wider mb-4">
               Our Services
             </h2>
             <div className="w-16 h-px bg-electric-blue mx-auto" />
@@ -294,13 +294,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                whileHover={{ y: -6, boxShadow: '0 20px 60px rgba(0,102,255,0.12)' }}
+                whileHover={{ y: -6, boxShadow: '0 20px 60px rgba(220,38,38,0.12)' }}
                 className="glass p-7 rounded cursor-pointer group"
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-electric-blue/10 text-electric-cyan mb-5 group-hover:bg-electric-blue/20 transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="font-display text-white text-lg uppercase tracking-wider mb-3">{service.title}</h3>
+                <h3 className="font-display text-gray-900 text-lg uppercase tracking-wider mb-3">{service.title}</h3>
                 <p className="font-body text-steel-silver text-sm leading-relaxed">{service.description}</p>
                 <div className="mt-5 flex items-center gap-2 text-electric-cyan/0 group-hover:text-electric-cyan/80 transition-colors text-xs font-display tracking-widest uppercase">
                   <span>Learn More</span>
@@ -332,7 +332,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase block mb-4">Primary Market</span>
-              <h2 className="font-display text-4xl md:text-5xl text-white uppercase tracking-wider mb-6">
+              <h2 className="font-display text-4xl md:text-5xl text-gray-900 uppercase tracking-wider mb-6">
                 K-12 Education<br />
                 <span className="gradient-text">Security Experts</span>
               </h2>
@@ -355,7 +355,7 @@ export default function Home() {
               </ul>
               <Link
                 href="/industries"
-                className="inline-flex items-center gap-2 text-electric-cyan text-sm font-display uppercase tracking-widest hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-electric-cyan text-sm font-display uppercase tracking-widest hover:text-gray-900 transition-colors"
               >
                 Explore K-12 Solutions
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2"/></svg>
@@ -377,7 +377,7 @@ export default function Home() {
                   height={450}
                   className="object-cover w-full"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-100/60 via-transparent to-transparent" />
               </div>
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -left-6 glass p-5 rounded border border-electric-blue/20">
@@ -398,7 +398,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="font-display text-3xl md:text-4xl text-white uppercase tracking-wider mb-4">
+            <h2 className="font-display text-3xl md:text-4xl text-gray-900 uppercase tracking-wider mb-4">
               Service Areas
             </h2>
             <p className="text-steel-silver">Proudly serving K-12 institutions across six states</p>
@@ -412,7 +412,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                whileHover={{ scale: 1.05, borderColor: 'rgba(0,212,255,0.4)' }}
+                whileHover={{ scale: 1.05, borderColor: 'rgba(220,38,38,0.4)' }}
                 className="glass p-6 rounded text-center cursor-pointer border border-electric-blue/10"
               >
                 <div className="font-display text-electric-cyan text-lg uppercase tracking-wider">{state}</div>
@@ -438,7 +438,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-12 rounded-full bg-electric-blue/20 flex items-center justify-center text-electric-cyan font-display">JD</div>
               <div className="text-left">
-                <div className="text-white font-semibold text-sm">James Davidson</div>
+                <div className="text-gray-900 font-semibold text-sm">James Davidson</div>
                 <div className="text-steel-silver text-xs">Director of Safety, Metro School District</div>
               </div>
             </div>
@@ -455,7 +455,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-display text-4xl md:text-6xl text-white uppercase tracking-wider mb-6">
+            <h2 className="font-display text-4xl md:text-6xl text-gray-900 uppercase tracking-wider mb-6">
               Ready to Secure<br />
               <span className="gradient-text">Your Institution?</span>
             </h2>

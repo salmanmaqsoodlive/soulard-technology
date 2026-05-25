@@ -54,7 +54,7 @@ export default function CaseStudies() {
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Real Implementations</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">Case Studies</h1>
+          <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Case Studies</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
             How K-12 districts across six states have modernized their security infrastructure with Soulard Technology.
           </p>
@@ -68,14 +68,14 @@ export default function CaseStudies() {
               <div key={c.district} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${i % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`relative overflow-hidden group ${i % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <Image src={c.img} alt={c.district} width={600} height={420} className="object-cover w-full h-72 transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-navy/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/70 to-transparent" />
                   <div className="absolute top-4 left-4">
-                    <span className="font-display text-electric-cyan text-xs tracking-[0.3em] uppercase bg-navy/80 px-3 py-1">{c.tag}</span>
+                    <span className="font-display text-electric-cyan text-xs tracking-[0.3em] uppercase bg-gray-900/80 px-3 py-1">{c.tag}</span>
                   </div>
                 </div>
                 <div className={i % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <div className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase mb-2">{c.state} · {c.size}</div>
-                  <h2 className="font-display text-3xl text-white uppercase tracking-wider mb-5">{c.district}</h2>
+                  <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-5">{c.district}</h2>
 
                   <div className="space-y-4 mb-6">
                     <div className="glass p-4">
