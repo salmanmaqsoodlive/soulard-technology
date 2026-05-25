@@ -124,10 +124,10 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
             alt="Security system"
             fill
-            className="object-cover opacity-70"
+            className="object-cover opacity-90"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-white/35 to-red-50/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-red-50/10" />
         </div>
 
         {/* Grid overlay */}
@@ -183,7 +183,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="text-steel-silver text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
             >
-              Advanced electronic access control consulting and security management systems for K-12 education institutions across Florida, Michigan, Illinois, Missouri, Indiana, and Ohio.
+              Providing security management system consulting, training and support on various electronic access control platforms. We specialize in the K-12 education market with a business model that allows our clients to be more self-contained — improving security needs while staying within their budget requirements.
             </motion.p>
 
             <motion.div
@@ -314,14 +314,14 @@ export default function Home() {
 
       {/* INDUSTRIES / K-12 FOCUS */}
       <section className="py-24 bg-navy-800 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-45">
+        <div className="absolute inset-0 opacity-80">
           <Image
             src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
             alt="K-12 school"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-navy-800/75" />
+          <div className="absolute inset-0 bg-navy-800/50" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

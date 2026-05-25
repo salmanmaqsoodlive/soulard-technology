@@ -19,9 +19,9 @@ export default function Footer() {
               <Image
                 src="/logo.webp"
                 alt="Soulard Technology"
-                width={160}
-                height={48}
-                className="h-12 w-auto object-contain"
+                width={220}
+                height={72}
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-steel-silver text-sm leading-relaxed mb-6">
