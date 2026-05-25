@@ -124,10 +124,10 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
             alt="Security system"
             fill
-            className="object-cover opacity-[0.06]"
+            className="object-cover opacity-40"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-red-50/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-red-50/40" />
         </div>
 
         {/* Grid overlay */}
@@ -245,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="py-20 bg-navy-800 border-y border-electric-blue/10 relative overflow-hidden">
+      <section className="py-20 bg-red-50 border-y border-red-200/60 relative overflow-hidden">
         <div className="absolute inset-0 bg-glow-radial opacity-50" />
         <div ref={statsRef} className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -423,7 +423,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-20 bg-navy-800">
+      <section className="py-20 bg-red-50 border-y border-red-200/40">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
