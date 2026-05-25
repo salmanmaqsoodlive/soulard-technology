@@ -124,10 +124,10 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
             alt="Security system"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-70"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-red-50/40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-white/35 to-red-50/20" />
         </div>
 
         {/* Grid overlay */}
@@ -314,14 +314,14 @@ export default function Home() {
 
       {/* INDUSTRIES / K-12 FOCUS */}
       <section className="py-24 bg-navy-800 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-45">
           <Image
             src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
             alt="K-12 school"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-navy-800/90" />
+          <div className="absolute inset-0 bg-navy-800/75" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

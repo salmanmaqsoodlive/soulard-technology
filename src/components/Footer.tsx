@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const serviceAreas = ['Florida', 'Michigan', 'Illinois', 'Missouri', 'Indiana', 'Ohio']
 const services = ['Access Control Consulting', 'K-12 Security', 'System Integration', 'Training & Support', 'Compliance Assessment']
@@ -14,19 +15,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-9 h-9 border-2 border-electric-blue rounded flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-electric-cyan">
-                  <rect x="3" y="3" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                  <rect x="14" y="3" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                  <rect x="3" y="14" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                  <rect x="14" y="14" width="7" height="7" fill="currentColor"/>
-                </svg>
-              </div>
-              <div>
-                <span className="font-display text-gray-900 text-lg tracking-widest uppercase block">SOULARD</span>
-                <span className="font-display text-electric-cyan text-xs tracking-[0.3em] uppercase -mt-1 block">Technology</span>
-              </div>
+            <div className="mb-6">
+              <Image
+                src="/logo.webp"
+                alt="Soulard Technology"
+                width={160}
+                height={48}
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-steel-silver text-sm leading-relaxed mb-6">
               Electronic access control consulting and security management systems for K-12 education markets.

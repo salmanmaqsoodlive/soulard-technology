@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -39,20 +40,15 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 border-2 border-electric-blue rounded flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-electric-blue/10 group-hover:bg-electric-blue/20 transition-colors" />
-              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-electric-cyan z-10">
-                <rect x="3" y="3" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                <rect x="14" y="3" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                <rect x="3" y="14" width="7" height="7" stroke="currentColor" strokeWidth="1.5"/>
-                <rect x="14" y="14" width="7" height="7" fill="currentColor"/>
-              </svg>
-            </div>
-            <div>
-              <span className="font-display text-gray-900 text-lg tracking-widest uppercase">SOULARD</span>
-              <span className="font-display text-electric-cyan text-xs block tracking-[0.3em] uppercase -mt-1">Technology</span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/logo.webp"
+              alt="Soulard Technology"
+              width={160}
+              height={48}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
