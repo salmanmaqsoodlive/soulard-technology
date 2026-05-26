@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import type { Metadata } from 'next'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -20,6 +21,15 @@ export default function Contact() {
       <Navbar />
 
       <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80"
+            alt="Security team collaboration"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
@@ -140,6 +150,18 @@ export default function Contact() {
 
             {/* Info */}
             <div className="space-y-8">
+              <div className="relative overflow-hidden rounded">
+                <Image
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80"
+                  alt="Security consultation meeting"
+                  width={600}
+                  height={320}
+                  className="object-cover w-full h-52"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent flex items-end p-6">
+                  <p className="font-display text-white text-sm uppercase tracking-wider">Free Initial Consultation</p>
+                </div>
+              </div>
               <div>
                 <h2 className="font-display text-gray-900 text-2xl uppercase tracking-wider mb-4">Get a Free Assessment</h2>
                 <p className="text-steel-silver leading-relaxed">

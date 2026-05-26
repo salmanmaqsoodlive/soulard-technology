@@ -17,7 +17,7 @@ const posts = [
     category: 'Compliance',
     date: 'April 15, 2025',
     readTime: '6 min read',
-    img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
   },
   {
     slug: 'access-control-vs-traditional-locks',
@@ -26,7 +26,7 @@ const posts = [
     category: 'Planning',
     date: 'March 28, 2025',
     readTime: '8 min read',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80',
   },
   {
     slug: 'mobile-credentials-k12',
@@ -35,7 +35,7 @@ const posts = [
     category: 'Technology',
     date: 'March 12, 2025',
     readTime: '5 min read',
-    img: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80',
   },
   {
     slug: 'incident-response-lockdown-protocols',
@@ -44,7 +44,7 @@ const posts = [
     category: 'Safety',
     date: 'February 22, 2025',
     readTime: '7 min read',
-    img: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80',
   },
   {
     slug: 'school-security-grant-funding',
@@ -62,7 +62,7 @@ const posts = [
     category: 'Technology',
     date: 'January 20, 2025',
     readTime: '6 min read',
-    img: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
   },
 ]
 
@@ -74,6 +74,15 @@ export default function Blog() {
       <Navbar />
 
       <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80"
+            alt="Security insights"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">

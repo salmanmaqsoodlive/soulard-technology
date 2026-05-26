@@ -121,10 +121,10 @@ export default function Home() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
-            alt="Security system"
+            src="https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80"
+            alt="School campus exterior"
             fill
-            className="object-cover opacity-90"
+            className="object-cover opacity-30 grayscale brightness-75"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-red-50/10" />
@@ -316,8 +316,8 @@ export default function Home() {
       <section className="py-24 bg-navy-800 relative overflow-hidden">
         <div className="absolute inset-0 opacity-80">
           <Image
-            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
-            alt="K-12 school"
+            src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=1920&q=80"
+            alt="School hallway"
             fill
             className="object-cover"
           />
@@ -371,8 +371,8 @@ export default function Home() {
             >
               <div className="relative rounded overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=1200&q=80"
-                  alt="Security consultant"
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=80"
+                  alt="Security consultant meeting"
                   width={600}
                   height={450}
                   className="object-cover w-full"

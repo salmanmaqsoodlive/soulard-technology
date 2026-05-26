@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -28,6 +29,15 @@ export default function Training() {
       <Navbar />
 
       <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&q=80"
+            alt="Training session"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
@@ -67,6 +77,22 @@ export default function Training() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="relative overflow-hidden mb-20 rounded">
+            <Image
+              src="https://images.unsplash.com/photo-1552581234-26160f608093?w=1920&q=80"
+              alt="Professional security training"
+              width={1200}
+              height={400}
+              className="object-cover w-full h-64"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/40 flex items-center px-12">
+              <div>
+                <div className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase mb-3">Empowering Your Team</div>
+                <h3 className="font-display text-3xl text-gray-900 uppercase tracking-wider">Confidence Through Knowledge</h3>
+              </div>
+            </div>
           </div>
 
           <h2 className="font-display text-3xl text-gray-900 uppercase tracking-wider mb-10">Support Tiers</h2>

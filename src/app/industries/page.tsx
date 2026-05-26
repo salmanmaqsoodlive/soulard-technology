@@ -24,6 +24,15 @@ export default function Industries() {
       <Navbar />
 
       <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
+            alt="K-12 school building"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
@@ -55,8 +64,8 @@ export default function Industries() {
               </p>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80"
-              alt="K-12 school"
+              src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?w=900&q=80"
+              alt="K-12 school campus"
               width={600}
               height={450}
               className="object-cover w-full"

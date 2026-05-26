@@ -32,11 +32,7 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? 'bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm py-3'
-            : 'bg-transparent py-5'
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white border-b border-gray-100 shadow-sm py-3"
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           {/* Logo */}

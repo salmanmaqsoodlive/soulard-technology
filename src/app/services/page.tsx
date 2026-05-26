@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -53,6 +54,15 @@ export default function Services() {
       <Navbar />
 
       <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1920&q=80"
+            alt="Cybersecurity and access control"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
@@ -95,7 +105,23 @@ export default function Services() {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="relative overflow-hidden mt-16 mb-12 rounded">
+            <Image
+              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80"
+              alt="Security consulting team at work"
+              width={1200}
+              height={380}
+              className="object-cover w-full h-64"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/40 flex items-center px-12">
+              <div>
+                <div className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase mb-3">Ready to Start</div>
+                <h3 className="font-display text-3xl text-gray-900 uppercase tracking-wider">Let's Build Your Solution</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
             <Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-electric-blue text-white font-display uppercase tracking-widest text-sm hover:bg-electric-blue/90 transition-all shadow-neon-blue">
               Discuss Your Needs
             </Link>

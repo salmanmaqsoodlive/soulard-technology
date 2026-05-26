@@ -7,7 +7,7 @@ const company = ['About Us', 'Services', 'Industries', 'Case Studies', 'Blog']
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-800 border-t border-electric-blue/10">
+    <footer className="bg-red-50 border-t border-red-200">
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid bg-grid opacity-30 pointer-events-none" />
 

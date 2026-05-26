@@ -24,7 +24,7 @@ const cases = [
     district: 'Franklin County Schools',
     state: 'Ohio',
     size: '7 Schools · 5,900 Students',
-    img: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80',
+    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80',
     challenge: 'Growing district with three new school construction projects, needed a unified system that could scale. Budget constraints required a phased multi-year implementation.',
     solution: 'Three-year implementation starting with the two highest-risk schools, with a pre-wired infrastructure plan for the three new buildings under construction.',
     results: ['Seamless integration across new and existing buildings', 'Bond funding coordination for new construction', 'IT staff training completed in 2 days', '$340,000 in avoided future retrofit costs'],
@@ -48,6 +48,15 @@ export default function CaseStudies() {
       <Navbar />
 
       <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&q=80"
+            alt="School campus"
+            fill
+            className="object-cover opacity-20 grayscale brightness-75"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
