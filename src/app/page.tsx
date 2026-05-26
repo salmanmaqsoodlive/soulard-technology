@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BrandsMarquee from '@/components/BrandsMarquee'
 
 function AnimatedCounter({ target, suffix = '', prefix = '' }: { target: number; suffix?: string; prefix?: string }) {
   const [count, setCount] = useState(0)
@@ -38,66 +39,34 @@ const stats = [
 
 const services = [
   {
-    title: 'Access Control Design',
-    description: 'Custom electronic access control system design tailored for K-12 facilities, budgets, and safety requirements.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" strokeWidth="1.5"/>
-        <circle cx="12" cy="16" r="1" fill="currentColor"/>
-      </svg>
-    ),
+    title: 'Consulting',
+    image: '/services/consulting.webp',
+    description: 'We specialize in working with K-12 education and government markets with a business model that allows our clients to be more self-contained to improve their security needs and still stay within their budget requirements.',
   },
   {
-    title: 'Security Consulting',
-    description: 'Expert guidance on security management systems, platform selection, and implementation strategy.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    title: 'Installation & Programming',
+    image: '/services/installation-programming.webp',
+    description: 'Soulard Technology is a one-stop-shop for add-ons and replacement parts from ordering to installation to programming to work with existing system. We can also program and troubleshoot products installed by others to work with your existing system.',
   },
   {
-    title: 'System Integration',
-    description: 'Seamless integration of access control with existing security infrastructure and building systems.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    title: 'Product Sales',
+    image: '/services/product-sales.webp',
+    description: 'At Soulard Technology, customer service is our top priority and because of that, we stock products that our customers need the most so that we can get those to you quickly. We stock products from Allegion (LCN, Locknetics, Schlage, Von Duprin), Engage Technology, Locknetics, Acre Security/Vanderbilt, Mercury, HID, Aiphone, BEA Wireless Transmitters and Receivers, and more.',
   },
   {
-    title: 'Training & Support',
-    description: 'Comprehensive training programs for administrators, security personnel, and technical staff.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 20h9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke="currentColor" strokeWidth="1.5"/>
-      </svg>
-    ),
+    title: 'Projects',
+    image: '/services/projects.webp',
+    description: 'Soulard Technology provides consulting, project management, and installation services on small to large education and government projects.',
   },
   {
-    title: 'Compliance Assessment',
-    description: 'Security audits and compliance reviews to meet state, federal, and district safety requirements.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" strokeWidth="1.5"/>
-        <rect x="9" y="3" width="6" height="4" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    title: 'Support',
+    image: '/services/support.webp',
+    description: 'Whether your support needs require an in-person visit by one of our technicians or can be resolved by a remote session, Soulard Technology has everything you will need to resolve your support needs. Support sessions can also assist in organizing and streamlining your access control system.',
   },
   {
-    title: 'Budget Optimization',
-    description: 'Strategic planning to maximize security effectiveness while staying within institutional budgets.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    title: 'Training',
+    image: '/services/training.webp',
+    description: 'With more than 35 years of experience, Soulard Technology has the knowledge and expertise to train your staff on door hardware as well as access control systems by Allegion and Acre Security.',
   },
 ]
 
@@ -286,7 +255,7 @@ export default function Home() {
             <div className="w-16 h-px bg-electric-blue mx-auto" />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <motion.div
                 key={service.title}
@@ -294,17 +263,20 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                whileHover={{ y: -6, boxShadow: '0 20px 60px rgba(220,38,38,0.12)' }}
-                className="glass p-7 rounded cursor-pointer group"
+                className="group rounded overflow-hidden border border-gray-100 hover:border-electric-cyan/30 hover:shadow-lg transition-all duration-300 bg-white"
               >
-                <div className="w-12 h-12 flex items-center justify-center bg-electric-blue/10 text-electric-cyan mb-5 group-hover:bg-electric-blue/20 transition-colors">
-                  {service.icon}
+                <div className="relative h-56 w-full overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
-                <h3 className="font-display text-gray-900 text-lg uppercase tracking-wider mb-3">{service.title}</h3>
-                <p className="font-body text-steel-silver text-sm leading-relaxed">{service.description}</p>
-                <div className="mt-5 flex items-center gap-2 text-electric-cyan/0 group-hover:text-electric-cyan/80 transition-colors text-xs font-display tracking-widest uppercase">
-                  <span>Learn More</span>
-                  <svg viewBox="0 0 24 24" fill="none" className="w-3 h-3"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2"/></svg>
+                <div className="p-6">
+                  <h3 className="font-display text-xl text-gray-900 uppercase tracking-wider mb-3">{service.title}</h3>
+                  <p className="font-body text-steel-silver text-sm leading-relaxed">{service.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -473,6 +445,7 @@ export default function Home() {
         </div>
       </section>
 
+      <BrandsMarquee />
       <Footer />
     </main>
   )

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BrandsMarquee from '@/components/BrandsMarquee'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -191,6 +192,7 @@ export default function Contact() {
         </div>
       </section>
 
+      <BrandsMarquee />
       <Footer />
     </main>
   )

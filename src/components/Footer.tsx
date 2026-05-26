@@ -3,7 +3,12 @@ import Image from 'next/image'
 
 const serviceAreas = ['Florida', 'Michigan', 'Illinois', 'Missouri', 'Indiana', 'Ohio']
 const services = ['Access Control Consulting', 'K-12 Security', 'System Integration', 'Training & Support', 'Compliance Assessment']
-const company = ['About Us', 'Services', 'Industries', 'Case Studies', 'Blog']
+const companyLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'Products', href: '/products' },
+  { label: 'Contact Us', href: '/contact' },
+]
 
 export default function Footer() {
   return (
@@ -55,10 +60,10 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Company</h4>
             <ul className="space-y-3">
-              {company.map((c) => (
-                <li key={c}>
-                  <Link href="/about" className="text-steel-silver text-sm hover:text-electric-cyan transition-colors">
-                    {c}
+              {companyLinks.map((c) => (
+                <li key={c.href}>
+                  <Link href={c.href} className="text-steel-silver text-sm hover:text-electric-cyan transition-colors">
+                    {c.label}
                   </Link>
                 </li>
               ))}

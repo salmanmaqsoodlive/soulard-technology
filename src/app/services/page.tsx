@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BrandsMarquee from '@/components/BrandsMarquee'
 
 export const metadata: Metadata = {
   title: 'Services | Soulard Technology',
@@ -11,60 +12,45 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    num: '01',
-    title: 'Access Control System Design',
-    desc: 'We design comprehensive electronic access control systems tailored specifically for K-12 environments. Our designs balance security effectiveness with budget realities, ensuring every door, every zone, and every access point is optimized for your institution.',
-    features: ['Site assessment and security audit', 'Multi-zone access planning', 'Platform-neutral recommendations', 'Budget optimization analysis', 'Future expansion planning'],
+    title: 'Consulting',
+    image: '/services/consulting.webp',
+    description: 'We specialize in working with K-12 education and government markets with a business model that allows our clients to be more self-contained to improve their security needs and still stay within their budget requirements.',
   },
   {
-    num: '02',
-    title: 'Security Management Consulting',
-    desc: 'Expert consulting services covering security management systems selection, vendor evaluation, and implementation strategy. We navigate the complex landscape of access control platforms so you don\'t have to.',
-    features: ['Platform comparison and evaluation', 'Vendor negotiation support', 'RFP development', 'Implementation roadmapping', 'ROI analysis'],
+    title: 'Installation & Programming',
+    image: '/services/installation-programming.webp',
+    description: 'Soulard Technology is a one-stop-shop for add-ons and replacement parts from ordering to installation to programming to work with existing system. We can also program and troubleshoot products installed by others to work with your existing system.',
   },
   {
-    num: '03',
-    title: 'System Integration',
-    desc: 'Seamlessly integrate new access control systems with your existing security infrastructure, building management systems, and district-wide networks.',
-    features: ['Legacy system integration', 'Visitor management connectivity', 'CCTV and intercom integration', 'Emergency notification systems', 'Network infrastructure planning'],
+    title: 'Product Sales',
+    image: '/services/product-sales.webp',
+    description: 'At Soulard Technology, customer service is our top priority and because of that, we stock products that our customers need the most so that we can get those to you quickly. We stock products from Allegion (LCN, Locknetics, Schlage, Von Duprin), Engage Technology, Locknetics, Acre Security/Vanderbilt, Mercury, HID, Aiphone, BEA Wireless Transmitters and Receivers, and more.',
   },
   {
-    num: '04',
-    title: 'Training & Certification',
-    desc: 'Comprehensive training programs for security directors, IT staff, administrators, and daily operators. We ensure your team is confident and capable with every system we implement.',
-    features: ['Administrator training', 'End-user training programs', 'Train-the-trainer certification', 'Custom training materials', 'Ongoing refresher sessions'],
+    title: 'Projects',
+    image: '/services/projects.webp',
+    description: 'Soulard Technology provides consulting, project management, and installation services on small to large education and government projects.',
   },
   {
-    num: '05',
-    title: 'Ongoing Support',
-    desc: 'Dedicated post-implementation support to ensure your access control systems perform optimally year after year.',
-    features: ['24/7 emergency support', 'Preventive maintenance programs', 'System performance monitoring', 'Software update management', 'Annual security reviews'],
+    title: 'Support',
+    image: '/services/support.webp',
+    description: 'Whether your support needs require an in-person visit by one of our technicians or can be resolved by a remote session, Soulard Technology has everything you will need to resolve your support needs. Support sessions can also assist in organizing and streamlining your access control system.',
   },
   {
-    num: '06',
-    title: 'Compliance Assessment',
-    desc: 'Thorough security audits and compliance reviews to ensure your institution meets all applicable state, federal, and district safety requirements.',
-    features: ['State safety mandate compliance', 'FERPA security considerations', 'Grant requirement alignment', 'Documentation support', 'Annual audit preparation'],
+    title: 'Training',
+    image: '/services/training.webp',
+    description: 'With more than 35 years of experience, Soulard Technology has the knowledge and expertise to train your staff on door hardware as well as access control systems by Allegion and Acre Security.',
   },
 ]
 
 export default function Services() {
   return (
-    <main className="bg-navy min-h-screen">
+    <main className="bg-white min-h-screen">
       <Navbar />
 
-      <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1920&q=80"
-            alt="Cybersecurity and access control"
-            fill
-            className="object-cover opacity-20 grayscale brightness-75"
-            priority
-          />
-        </div>
-        <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="container mx-auto px-6 relative z-10">
+      {/* Page header */}
+      <section className="pt-32 pb-12 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-px w-10 bg-electric-cyan" />
             <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">What We Offer</span>
@@ -76,59 +62,52 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-16 bg-navy">
+      {/* Service cards grid */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <div className="space-y-6">
-            {services.map((s, i) => (
-              <div key={s.num} className="glass p-8 group hover:border-electric-cyan/20 transition-all">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                  <div className="lg:col-span-2">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="font-display text-electric-cyan/30 text-4xl">{s.num}</span>
-                      <h2 className="font-display text-2xl text-gray-900 uppercase tracking-wider">{s.title}</h2>
-                    </div>
-                    <p className="text-steel-silver leading-relaxed">{s.desc}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-display text-electric-cyan text-xs tracking-widest uppercase mb-4">Includes</h4>
-                    <ul className="space-y-2">
-                      {s.features.map((f) => (
-                        <li key={f} className="flex items-center gap-2 text-steel-silver text-sm">
-                          <div className="w-1.5 h-1.5 bg-electric-blue rounded-full flex-shrink-0" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="group rounded overflow-hidden border border-gray-100 hover:border-electric-cyan/30 hover:shadow-lg transition-all duration-300 bg-white"
+              >
+                {/* Image */}
+                <div className="relative h-56 w-full overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <h2 className="font-display text-xl text-gray-900 uppercase tracking-wider mb-3">
+                    {service.title}
+                  </h2>
+                  <p className="text-steel-silver text-sm leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="relative overflow-hidden mt-16 mb-12 rounded">
-            <Image
-              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80"
-              alt="Security consulting team at work"
-              width={1200}
-              height={380}
-              className="object-cover w-full h-64"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/40 flex items-center px-12">
-              <div>
-                <div className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase mb-3">Ready to Start</div>
-                <h3 className="font-display text-3xl text-gray-900 uppercase tracking-wider">Let's Build Your Solution</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-electric-blue text-white font-display uppercase tracking-widest text-sm hover:bg-electric-blue/90 transition-all shadow-neon-blue">
-              Discuss Your Needs
+          {/* CTA */}
+          <div className="text-center mt-16">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-electric-blue text-white font-display uppercase tracking-widest text-sm hover:bg-electric-blue/90 transition-all"
+            >
+              Get a Consultation
             </Link>
           </div>
         </div>
       </section>
 
+      <BrandsMarquee />
       <Footer />
     </main>
   )
