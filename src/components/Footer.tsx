@@ -75,7 +75,7 @@ export default function Footer() {
             <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Contact</h4>
             <div className="space-y-4 text-sm text-steel-silver">
               <p>Serving K-12 institutions across 6 states</p>
-              <Link href="/contact" className="block hover:text-electric-cyan transition-colors">info@soulardtech.com</Link>
+              <a href="mailto:greg.hodge@soulardtechnology.net" className="block hover:text-electric-cyan transition-colors">greg.hodge@soulardtechnology.net</a>
               <Link
                 href="/contact"
                 className="inline-block mt-4 px-5 py-2.5 border border-electric-blue/40 text-electric-cyan text-xs uppercase tracking-widest hover:bg-electric-blue/10 transition-colors"
