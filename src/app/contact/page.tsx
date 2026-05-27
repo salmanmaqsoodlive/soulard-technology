@@ -74,8 +74,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="text-steel-silver text-lg max-w-xl">
-            Ready to improve security at your institution? Let's start the
-            conversation.
+            Ready to improve security at your school, university, or government facility? Let's start the conversation.
           </p>
         </div>
       </section>
@@ -153,10 +152,7 @@ export default function Contact() {
                       {[
                         "Florida",
                         "Michigan",
-                        "Illinois",
                         "Missouri",
-                        "Indiana",
-                        "Ohio",
                       ].map((s) => (
                         <option key={s} value={s}>
                           {s}
@@ -181,6 +177,9 @@ export default function Contact() {
                       <option>System Integration</option>
                       <option>Training & Support</option>
                       <option>Compliance Assessment</option>
+                      <option>K-12 Education</option>
+                      <option>Higher Education</option>
+                      <option>Government / Municipal</option>
                     </select>
                   </div>
                   <div>
@@ -264,10 +263,7 @@ export default function Contact() {
                     {[
                       "Florida",
                       "Michigan",
-                      "Illinois",
                       "Missouri",
-                      "Indiana",
-                      "Ohio",
                     ].map((s) => (
                       <span
                         key={s}
@@ -291,10 +287,27 @@ export default function Contact() {
                     Email
                   </div>
                   <a
-                    href="mailto:greg.hodge@soulardtechnology.net"
+                    href="mailto:greg.hodge@soulardesp.com"
+                    className="text-electric-cyan hover:text-gray-900 transition-colors text-sm block"
+                  >
+                    greg.hodge@soulardesp.com
+                  </a>
+                  <a
+                    href="mailto:taylor.hodge@soulardesp.com"
+                    className="text-electric-cyan hover:text-gray-900 transition-colors text-sm block mt-1"
+                  >
+                    taylor.hodge@soulardesp.com
+                  </a>
+                </div>
+                <div className="glass p-5">
+                  <div className="font-display text-electric-cyan text-xs tracking-widest uppercase mb-2">
+                    Phone
+                  </div>
+                  <a
+                    href="tel:8664045519"
                     className="text-electric-cyan hover:text-gray-900 transition-colors text-sm"
                   >
-                    greg.hodge@soulardtechnology.net
+                    866-404-5519
                   </a>
                 </div>
               </div>

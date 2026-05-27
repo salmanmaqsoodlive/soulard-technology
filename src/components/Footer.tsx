@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const serviceAreas = ['Florida', 'Michigan', 'Illinois', 'Missouri', 'Indiana', 'Ohio']
-const services = ['Access Control Consulting', 'K-12 Security', 'System Integration', 'Training & Support', 'Compliance Assessment']
+const serviceAreas = ['Florida', 'Michigan', 'Missouri']
+const services = ['Access Control Consulting', 'K-12 Education', 'Higher Education', 'Government & Municipal', 'System Integration', 'Training & Support']
 const companyLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
@@ -30,7 +30,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-steel-silver text-sm leading-relaxed mb-6">
-              Electronic access control consulting and security management systems for K-12 education markets.
+              Electronic access control consulting and security management systems for K-12 education, higher education, and government markets.
             </p>
             <div className="flex flex-wrap gap-2">
               {serviceAreas.map((state) => (
@@ -74,8 +74,10 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-gray-900 text-sm tracking-widest uppercase mb-6 after:block after:w-8 after:h-px after:bg-electric-blue after:mt-2">Contact</h4>
             <div className="space-y-4 text-sm text-steel-silver">
-              <p>Serving K-12 institutions across 6 states</p>
-              <a href="mailto:greg.hodge@soulardtechnology.net" className="block hover:text-electric-cyan transition-colors">greg.hodge@soulardtechnology.net</a>
+              <p>Serving K-12, higher education & government clients across 3 states</p>
+              <a href="mailto:greg.hodge@soulardesp.com" className="block hover:text-electric-cyan transition-colors">greg.hodge@soulardesp.com</a>
+              <a href="mailto:taylor.hodge@soulardesp.com" className="block hover:text-electric-cyan transition-colors">taylor.hodge@soulardesp.com</a>
+              <a href="tel:8664045519" className="block hover:text-electric-cyan transition-colors">866-404-5519</a>
               <Link
                 href="/contact"
                 className="inline-block mt-4 px-5 py-2.5 border border-electric-blue/40 text-electric-cyan text-xs uppercase tracking-widest hover:bg-electric-blue/10 transition-colors"

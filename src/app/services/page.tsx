@@ -7,7 +7,7 @@ import BrandsMarquee from '@/components/BrandsMarquee'
 
 export const metadata: Metadata = {
   title: 'Services | Soulard Technology',
-  description: 'Access control consulting, system integration, training, and support services for K-12 institutions.',
+  description: 'Access control consulting, system integration, training, and support services for K-12, higher education, and government institutions.',
 }
 
 const services = [
@@ -57,7 +57,7 @@ export default function Services() {
           </div>
           <h1 className="font-display text-5xl md:text-7xl text-gray-900 uppercase tracking-wider mb-4">Our Services</h1>
           <p className="text-steel-silver text-lg max-w-2xl">
-            Comprehensive security consulting and access control solutions designed specifically for K-12 educational institutions.
+            Comprehensive security consulting and access control solutions for K-12 education, higher education, and government institutions.
           </p>
         </div>
       </section>

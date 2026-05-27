@@ -70,7 +70,7 @@ const services = [
   },
 ]
 
-const serviceAreas = ['Florida', 'Michigan', 'Illinois', 'Missouri', 'Indiana', 'Ohio']
+const serviceAreas = ['Florida', 'Michigan', 'Missouri']
 
 export default function Home() {
   const heroRef = useRef<HTMLElement>(null)
@@ -122,7 +122,7 @@ export default function Home() {
               className="flex items-center gap-3 mb-8"
             >
               <div className="h-px w-12 bg-electric-cyan" />
-              <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">K-12 Security Specialists</span>
+              <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase">Education & Government Security Specialists</span>
             </motion.div>
 
             <div className="overflow-hidden mb-4">
@@ -152,7 +152,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="text-steel-silver text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
             >
-              Providing security management system consulting, training and support on various electronic access control platforms. We specialize in the K-12 education market with a business model that allows our clients to be more self-contained — improving security needs while staying within their budget requirements.
+              Providing security management system consulting, training and support on various electronic access control platforms. We specialize in K-12 education, higher education, and government markets with a business model that allows our clients to be more self-contained — improving security needs while staying within their budget requirements.
             </motion.p>
 
             <motion.div
@@ -303,21 +303,22 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase block mb-4">Primary Market</span>
+              <span className="font-display text-electric-cyan text-xs tracking-[0.4em] uppercase block mb-4">Markets We Serve</span>
               <h2 className="font-display text-4xl md:text-5xl text-gray-900 uppercase tracking-wider mb-6">
-                K-12 Education<br />
+                Education & Government<br />
                 <span className="gradient-text">Security Experts</span>
               </h2>
               <p className="text-steel-silver leading-relaxed mb-6">
-                We understand the unique security challenges facing today's educational institutions. From elementary schools to high schools, Soulard Technology delivers comprehensive access control solutions that protect students and staff while respecting budget constraints.
+                We understand the unique security challenges facing K-12 schools, colleges and universities, and government facilities. Soulard Technology delivers comprehensive access control solutions that protect students, staff, and the public while respecting budget constraints.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
+                  'K-12 schools & districts',
+                  'Colleges & universities',
+                  'Government & municipal facilities',
                   'Budget-conscious security solutions',
                   'Compliance with state safety mandates',
-                  'Scalable for growing districts',
                   'Minimal disruption during implementation',
-                  'Ongoing training for all staff levels',
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-steel-silver text-sm">
                     <div className="w-1.5 h-1.5 bg-electric-cyan rounded-full flex-shrink-0" />
@@ -326,10 +327,10 @@ export default function Home() {
                 ))}
               </ul>
               <Link
-                href="/industries"
+                href="/services"
                 className="inline-flex items-center gap-2 text-electric-cyan text-sm font-display uppercase tracking-widest hover:text-gray-900 transition-colors"
               >
-                Explore K-12 Solutions
+                Explore Our Solutions
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2"/></svg>
               </Link>
             </motion.div>
@@ -373,7 +374,7 @@ export default function Home() {
             <h2 className="font-display text-3xl md:text-4xl text-gray-900 uppercase tracking-wider mb-4">
               Service Areas
             </h2>
-            <p className="text-steel-silver">Proudly serving K-12 institutions across six states</p>
+            <p className="text-steel-silver">Proudly serving K-12, higher education, and government clients across three states</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -432,7 +433,7 @@ export default function Home() {
               <span className="gradient-text">Your Institution?</span>
             </h2>
             <p className="text-steel-silver text-lg mb-10 max-w-xl mx-auto">
-              Get a free security assessment and consultation for your K-12 facility.
+              Get a free security assessment and consultation for your school, university, or government facility.
             </p>
             <Link
               href="/contact"
